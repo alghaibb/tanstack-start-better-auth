@@ -16,7 +16,8 @@
     "db:migrate": "dotenv -e .env.local -- prisma migrate dev",
     "db:studio": "dotenv -e .env.local -- prisma studio",
     "db:seed": "dotenv -e .env.local -- prisma db seed",
-    "email:dev": "email dev --dir src/components/emails --port 4000"
+    "email:dev": "email dev --dir src/components/emails --port 4000",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@base-ui/react": "^1.1.0",
