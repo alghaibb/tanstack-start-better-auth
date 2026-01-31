@@ -3,6 +3,7 @@ import { z } from 'zod'
 
 export const env = createEnv({
   server: {
+    BETTER_AUTH_URL: z.string().min(1),
     RESEND_API_KEY: z.string().min(1),
   },
 
@@ -22,6 +23,7 @@ export const env = createEnv({
    */
   runtimeEnv: {
     // Server variables (from process.env)
+    BETTER_AUTH_URL: process.env.BETTER_AUTH_URL,
     RESEND_API_KEY: process.env.RESEND_API_KEY,
     // Client variables (from import.meta.env)
     VITE_APP_TITLE: import.meta.env.VITE_APP_TITLE,
