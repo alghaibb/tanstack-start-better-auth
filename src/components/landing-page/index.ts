@@ -1,0 +1,6 @@
+export { Hero } from './hero'
+export { Features } from './features'
+export { TechStack } from './tech-stack'
+export { CodePreview } from './code-preview'
+export { CTA } from './cta'
+export { Footer } from './footer'
